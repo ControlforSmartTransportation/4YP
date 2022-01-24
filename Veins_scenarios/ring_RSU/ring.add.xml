@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <rerouter id="rerouter_0" edges="gneE9" pos="77.42,119.64">
+        <interval begin="0.00" end="3600.00">
+            <destProbReroute id="gneE21" probability="1.00"/>
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_1" edges="gneE21" pos="-17.51,155.77">
+        <interval begin="0.00" end="3600.00">
+            <destProbReroute id="gneE9" probability="1.00"/>
+        </interval>
+    </rerouter>
+</additional>
