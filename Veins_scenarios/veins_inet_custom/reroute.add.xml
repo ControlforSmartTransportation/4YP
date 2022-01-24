@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additionals>
+
+	<rerouter id="rerouter_0" edges="gneE5 gneE0 gneE1">
+		<interval begin="50" end="200">
+			<closingReroute id="gneE5" disallow="all"/>
+		</interval>
+	</rerouter>
+
+</additionals>
