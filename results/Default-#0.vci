@@ -1,0 +1,463 @@
+file 282532 1645729273                                          
+version 2
+run Default-0-20220224-19:01:11-341472
+attr configname Default
+attr datetime 20220224-19:01:11
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network smartjunctionScenario
+attr processid 341472
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 850m
+param *.playgroundSizeY 850m
+param *.playgroundSizeZ 10m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"smartjunction.launchd.xml\")"
+param *.rsu[0].mobility.x 215
+param *.rsu[0].mobility.y 215
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"SmartJunctionRSUApp_stop\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 20s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"SmartJunctionCarApp_stop\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+
+vector 0 smartjunctionScenario.node[0].veinsmobility posx ETV
+vector 1 smartjunctionScenario.node[0].veinsmobility posy ETV
+vector 2 smartjunctionScenario.node[1].veinsmobility posx ETV
+vector 3 smartjunctionScenario.node[1].veinsmobility posy ETV
+vector 4 smartjunctionScenario.node[0].veinsmobility speed ETV
+vector 5 smartjunctionScenario.node[1].veinsmobility speed ETV
+vector 6 smartjunctionScenario.node[0].veinsmobility acceleration ETV
+vector 7 smartjunctionScenario.node[0].veinsmobility co2emission ETV
+vector 8 smartjunctionScenario.node[1].veinsmobility acceleration ETV
+vector 9 smartjunctionScenario.node[1].veinsmobility co2emission ETV
+vector 10 smartjunctionScenario.node[2].veinsmobility posx ETV
+vector 11 smartjunctionScenario.node[2].veinsmobility posy ETV
+vector 12 smartjunctionScenario.node[3].veinsmobility posx ETV
+vector 13 smartjunctionScenario.node[3].veinsmobility posy ETV
+vector 14 smartjunctionScenario.node[2].veinsmobility speed ETV
+vector 15 smartjunctionScenario.node[3].veinsmobility speed ETV
+vector 16 smartjunctionScenario.node[2].veinsmobility acceleration ETV
+vector 17 smartjunctionScenario.node[2].veinsmobility co2emission ETV
+vector 18 smartjunctionScenario.node[3].veinsmobility acceleration ETV
+vector 19 smartjunctionScenario.node[3].veinsmobility co2emission ETV
+vector 20 smartjunctionScenario.node[4].veinsmobility posx ETV
+vector 21 smartjunctionScenario.node[4].veinsmobility posy ETV
+vector 22 smartjunctionScenario.node[5].veinsmobility posx ETV
+vector 23 smartjunctionScenario.node[5].veinsmobility posy ETV
+vector 24 smartjunctionScenario.node[4].veinsmobility speed ETV
+vector 25 smartjunctionScenario.node[5].veinsmobility speed ETV
+vector 26 smartjunctionScenario.node[4].veinsmobility acceleration ETV
+vector 27 smartjunctionScenario.node[4].veinsmobility co2emission ETV
+vector 28 smartjunctionScenario.node[5].veinsmobility acceleration ETV
+vector 29 smartjunctionScenario.node[5].veinsmobility co2emission ETV
+vector 30 smartjunctionScenario.node[6].veinsmobility posx ETV
+vector 31 smartjunctionScenario.node[6].veinsmobility posy ETV
+vector 32 smartjunctionScenario.node[7].veinsmobility posx ETV
+vector 33 smartjunctionScenario.node[7].veinsmobility posy ETV
+vector 34 smartjunctionScenario.node[6].veinsmobility speed ETV
+vector 35 smartjunctionScenario.node[7].veinsmobility speed ETV
+vector 36 smartjunctionScenario.node[6].veinsmobility acceleration ETV
+vector 37 smartjunctionScenario.node[6].veinsmobility co2emission ETV
+vector 38 smartjunctionScenario.node[7].veinsmobility acceleration ETV
+vector 39 smartjunctionScenario.node[7].veinsmobility co2emission ETV
+vector 40 smartjunctionScenario.node[8].veinsmobility posx ETV
+vector 41 smartjunctionScenario.node[8].veinsmobility posy ETV
+vector 42 smartjunctionScenario.node[9].veinsmobility posx ETV
+vector 43 smartjunctionScenario.node[9].veinsmobility posy ETV
+vector 44 smartjunctionScenario.node[8].veinsmobility speed ETV
+vector 45 smartjunctionScenario.node[9].veinsmobility speed ETV
+vector 46 smartjunctionScenario.node[8].veinsmobility acceleration ETV
+vector 47 smartjunctionScenario.node[8].veinsmobility co2emission ETV
+vector 48 smartjunctionScenario.node[9].veinsmobility acceleration ETV
+vector 49 smartjunctionScenario.node[9].veinsmobility co2emission ETV
+vector 50 smartjunctionScenario.node[10].veinsmobility posx ETV
+vector 51 smartjunctionScenario.node[10].veinsmobility posy ETV
+vector 52 smartjunctionScenario.node[11].veinsmobility posx ETV
+vector 53 smartjunctionScenario.node[11].veinsmobility posy ETV
+vector 54 smartjunctionScenario.node[10].veinsmobility speed ETV
+vector 55 smartjunctionScenario.node[11].veinsmobility speed ETV
+vector 56 smartjunctionScenario.node[10].veinsmobility acceleration ETV
+vector 57 smartjunctionScenario.node[10].veinsmobility co2emission ETV
+vector 58 smartjunctionScenario.node[11].veinsmobility acceleration ETV
+vector 59 smartjunctionScenario.node[11].veinsmobility co2emission ETV
+vector 60 smartjunctionScenario.node[12].veinsmobility posx ETV
+vector 61 smartjunctionScenario.node[12].veinsmobility posy ETV
+vector 62 smartjunctionScenario.node[13].veinsmobility posx ETV
+vector 63 smartjunctionScenario.node[13].veinsmobility posy ETV
+vector 64 smartjunctionScenario.node[12].veinsmobility speed ETV
+vector 65 smartjunctionScenario.node[13].veinsmobility speed ETV
+9	6605 670 4 314 3 32 30 0.973 9.4104968786684 89.696152641642 369.71415757883
+8	7275 767 4 314 3 32 30 -0.8961855674861 2.5530080158263 11.705408124543 25.062465001233
+5	8042 738 3 314 2 32 31 2.5366576599656 14.548518294782 389.80965804561 5188.5675371648
+3	8780 749 2 314 1 32 32 30.290341954385 419.9 7775.143238249 2371643.503699
+2	9529 447 2 314 1 32 32 226.6 226.6 7251.2 1643121.92
+vector 66 smartjunctionScenario.node[12].veinsmobility acceleration ETV
+vector 67 smartjunctionScenario.node[12].veinsmobility co2emission ETV
+vector 68 smartjunctionScenario.node[13].veinsmobility acceleration ETV
+vector 69 smartjunctionScenario.node[13].veinsmobility co2emission ETV
+7	10262 648 4 315 3 33 31 0.973 10.097346509158 120.35214382018 705.96618959253
+6	10910 760 4 315 3 33 31 -4.5 2.4715285003651 13.035270040153 88.629567123889
+4	11670 761 3 315 2 33 32 1.4688386279158 15.467826394291 381.15290379262 5083.5769131573
+1	12431 462 2 315 1 33 33 226.6 226.6 7477.8 1694469.48
+0	12893 778 2 315 1 33 33 30.1 411.05290379262 6643.0905560469 1788273.3392409
+vector 70 smartjunctionScenario.node[14].veinsmobility posx ETV
+vector 71 smartjunctionScenario.node[14].veinsmobility posy ETV
+vector 72 smartjunctionScenario.node[15].veinsmobility posx ETV
+vector 73 smartjunctionScenario.node[15].veinsmobility posy ETV
+vector 74 smartjunctionScenario.node[14].veinsmobility speed ETV
+vector 75 smartjunctionScenario.node[15].veinsmobility speed ETV
+19	14057 677 9 872 8 37 30 0.973 9.032730932749 93.258243039044 427.48919452176
+18	14734 803 9 872 8 37 30 -1.085014008428 2.5339947584318 11.170829130269 33.097657570548
+15	15537 789 8 872 7 37 31 2.5718988770619 14.084494161445 386.50340408872 5038.7696889179
+13	16326 796 7 872 6 37 32 33.596595911278 419.9 7688.3317756707 2315335.5083226
+12	17122 494 7 872 6 37 32 226.6 226.6 7251.2 1643121.92
+vector 76 smartjunctionScenario.node[14].veinsmobility acceleration ETV
+vector 77 smartjunctionScenario.node[14].veinsmobility co2emission ETV
+vector 78 smartjunctionScenario.node[15].veinsmobility acceleration ETV
+vector 79 smartjunctionScenario.node[15].veinsmobility co2emission ETV
+29	17902 642 14 875 13 40 28 0.973 9.2623104592497 97.210021810983 490.39680841135
+28	18544 750 14 875 13 40 28 -0.80951530318707 2.5095577547094 12.561366767905 33.273526660268
+25	19294 746 13 875 12 40 29 2.1994512931444 16.000635276877 394.80951116771 5758.5855606243
+23	20040 758 12 875 11 40 30 25.290488832291 419.9 7271.5200668893 2239293.9875969
+22	20798 474 12 875 11 40 30 226.6 226.6 6798 1540426.8
+vector 80 smartjunctionScenario.node[16].veinsmobility posx ETV
+vector 81 smartjunctionScenario.node[16].veinsmobility posy ETV
+vector 82 smartjunctionScenario.node[17].veinsmobility posx ETV
+vector 83 smartjunctionScenario.node[17].veinsmobility posy ETV
+vector 84 smartjunctionScenario.node[16].veinsmobility speed ETV
+vector 85 smartjunctionScenario.node[17].veinsmobility speed ETV
+vector 86 smartjunctionScenario.node[16].veinsmobility acceleration ETV
+vector 87 smartjunctionScenario.node[16].veinsmobility co2emission ETV
+vector 88 smartjunctionScenario.node[17].veinsmobility acceleration ETV
+vector 89 smartjunctionScenario.node[17].veinsmobility co2emission ETV
+17	21944 850 9 880 8 45 38 0.973 9.3618044991818 121.15062601971 594.53187075159
+16	22794 1010 9 880 8 45 38 -3.9868512351066 2.4474117824575 11.85854825738 97.523811023576
+14	23804 1004 8 880 7 45 39 0.0044610019166873 14.281744835964 385.35440196079 4699.9324292289
+11	24808 622 7 880 6 45 40 226.6 226.6 9064 2053902.4
+10	25430 1009 7 880 6 45 40 30.1 415.25440196079 8404.7481737926 2235437.0807967
+vector 90 smartjunctionScenario.node[18].veinsmobility posx ETV
+vector 91 smartjunctionScenario.node[18].veinsmobility posy ETV
+vector 92 smartjunctionScenario.node[19].veinsmobility posx ETV
+vector 93 smartjunctionScenario.node[19].veinsmobility posy ETV
+vector 94 smartjunctionScenario.node[18].veinsmobility speed ETV
+vector 95 smartjunctionScenario.node[19].veinsmobility speed ETV
+vector 96 smartjunctionScenario.node[18].veinsmobility acceleration ETV
+vector 97 smartjunctionScenario.node[18].veinsmobility co2emission ETV
+vector 98 smartjunctionScenario.node[19].veinsmobility acceleration ETV
+vector 99 smartjunctionScenario.node[19].veinsmobility co2emission ETV
+27	27111 845 14 884 13 49 37 0.973 6.979323505566 101.68769037662 401.36953762757
+26	27956 999 14 884 13 49 37 -4.0463164468366 2.4876354420092 10.273394601141 58.209058669499
+24	28955 980 13 884 12 49 38 1.8769018705236 12.240115749184 388.0534588245 4233.2586754251
+21	29935 618 12 884 11 49 39 226.6 226.6 8837.4 2002554.84
+20	30553 994 12 884 11 49 39 30.1 417.9534588245 8272.0228863607 2287201.713368
+vector 100 smartjunctionScenario.node[20].veinsmobility posx ETV
+vector 101 smartjunctionScenario.node[20].veinsmobility posy ETV
+vector 102 smartjunctionScenario.node[21].veinsmobility posx ETV
+vector 103 smartjunctionScenario.node[21].veinsmobility posy ETV
+vector 104 smartjunctionScenario.node[20].veinsmobility speed ETV
+vector 105 smartjunctionScenario.node[21].veinsmobility speed ETV
+vector 106 smartjunctionScenario.node[20].veinsmobility acceleration ETV
+vector 107 smartjunctionScenario.node[20].veinsmobility co2emission ETV
+vector 108 smartjunctionScenario.node[21].veinsmobility acceleration ETV
+vector 109 smartjunctionScenario.node[21].veinsmobility co2emission ETV
+vector 110 smartjunctionScenario.node[22].veinsmobility posx ETV
+vector 111 smartjunctionScenario.node[22].veinsmobility posy ETV
+vector 112 smartjunctionScenario.node[23].veinsmobility posx ETV
+vector 113 smartjunctionScenario.node[23].veinsmobility posy ETV
+vector 114 smartjunctionScenario.node[22].veinsmobility speed ETV
+vector 115 smartjunctionScenario.node[23].veinsmobility speed ETV
+39	32621 917 300 1821 18 57 40 0.973 4.7432951155341 90.429248333313 266.74588874712
+38	33538 1094 300 1821 18 57 40 -1.1268349415623 1.9552915811772 7.8032093492718 23.903862295799
+35	34632 1064 299 1821 17 57 41 2.3684379417915 10.616247972628 384.72860182442 3716.3317145328
+33	35696 1081 17 1821 16 57 42 35.371398175577 419.9 9975.9859552325 2953553.7807279
+32	36777 672 17 1821 16 57 42 226.6 226.6 9517.2 2156597.52
+vector 116 smartjunctionScenario.node[22].veinsmobility acceleration ETV
+vector 117 smartjunctionScenario.node[22].veinsmobility co2emission ETV
+vector 118 smartjunctionScenario.node[23].veinsmobility acceleration ETV
+vector 119 smartjunctionScenario.node[23].veinsmobility co2emission ETV
+49	37739 843 305 1823 23 59 37 0.973 10.924783450329 115.965959427 604.59854808058
+48	38582 999 305 1823 23 59 37 -2.0869407332918 2.2976288788253 10.350995271422 63.055979769851
+45	39581 985 304 1823 22 59 38 1.6129066847032 15.938495030361 387.68240914371 4210.2491775288
+43	40566 1004 303 1823 21 59 39 32.41759085629 419.9 8966.1820253881 2616589.8550537
+42	41570 627 303 1823 21 59 39 226.6 226.6 8837.4 2002554.84
+vector 120 smartjunctionScenario.node[24].veinsmobility posx ETV
+vector 121 smartjunctionScenario.node[24].veinsmobility posy ETV
+vector 122 smartjunctionScenario.node[25].veinsmobility posx ETV
+vector 123 smartjunctionScenario.node[25].veinsmobility posy ETV
+59	42457 768 310 1825 28 61 34 0.973 8.2424172459994 98.790453675076 422.90981791924
+58	43225 927 310 1825 28 61 34 -1.7652333582912 2.3818135011941 11.757443424195 38.617745857785
+55	44152 911 309 1825 27 61 35 1.3559610384982 13.117946821984 390.18467880611 4615.9977940886
+53	45063 925 308 1825 26 61 36 29.915321193893 419.9 8571.922131416 2589788.7056074
+52	45988 581 308 1825 26 61 36 226.6 226.6 8157.6 1848512.16
+vector 124 smartjunctionScenario.node[24].veinsmobility speed ETV
+vector 125 smartjunctionScenario.node[25].veinsmobility speed ETV
+vector 126 smartjunctionScenario.node[24].veinsmobility acceleration ETV
+vector 127 smartjunctionScenario.node[24].veinsmobility co2emission ETV
+vector 128 smartjunctionScenario.node[25].veinsmobility acceleration ETV
+vector 129 smartjunctionScenario.node[25].veinsmobility co2emission ETV
+69	46991 746 315 1828 33 64 32 0.973 7.6621991312607 92.124238916185 370.02018916121
+68	47737 876 315 1828 33 64 32 -1.1919642246561 2.3173788755899 10.195683975344 29.506528969233
+65	48613 863 314 1828 32 64 33 2.2308740391396 13.611202562612 394.1230651102 4935.8130573987
+63	49476 879 313 1828 31 64 34 25.976934889797 419.9 8058.8015974957 2430576.7666498
+62	50355 552 313 1828 31 64 34 226.6 226.6 7704.4 1745817.04
+vector 130 smartjunctionScenario.node[26].veinsmobility posx ETV
+vector 131 smartjunctionScenario.node[26].veinsmobility posy ETV
+vector 132 smartjunctionScenario.node[27].veinsmobility posx ETV
+vector 133 smartjunctionScenario.node[27].veinsmobility posy ETV
+vector 134 smartjunctionScenario.node[26].veinsmobility speed ETV
+vector 135 smartjunctionScenario.node[27].veinsmobility speed ETV
+vector 136 smartjunctionScenario.node[26].veinsmobility acceleration ETV
+vector 137 smartjunctionScenario.node[26].veinsmobility co2emission ETV
+vector 138 smartjunctionScenario.node[27].veinsmobility acceleration ETV
+vector 139 smartjunctionScenario.node[27].veinsmobility co2emission ETV
+37	51589 1199 300 1833 18 69 52 0.973 8.0756460273463 127.2736901164 508.34120602602
+36	52788 1318 300 1833 18 69 52 -4.5 2.5810525485314 11.040190016395 92.392304954379
+34	54106 1293 299 1833 17 69 53 0 13.074539949475 391.41808641513 4480.9136705719
+31	55399 876 17 1833 16 69 54 226.6 226.6 12236.4 2772768.24
+30	56275 1401 17 1833 16 69 54 30.1 421.31808641513 11529.475871081 2983072.3380327
+79	57676 744 873 1833 38 69 32 0.973 9.6533745344507 108.25638453728 550.11207059323
+78	58420 875 873 1833 38 69 32 -4.1903795537645 2.3959852399305 11.906946560741 75.147665077517
+75	59295 863 872 1833 37 69 33 1.8968161821831 14.445174067864 381.3203088163 4809.8847867026
+73	60158 884 318 1833 36 69 34 38.779691183703 419.9 8431.6839531537 2560857.8582188
+72	61042 557 318 1833 36 69 34 226.6 226.6 7704.4 1745817.04
+vector 140 smartjunctionScenario.node[28].veinsmobility posx ETV
+vector 141 smartjunctionScenario.node[28].veinsmobility posy ETV
+vector 142 smartjunctionScenario.node[29].veinsmobility posx ETV
+vector 143 smartjunctionScenario.node[29].veinsmobility posy ETV
+vector 144 smartjunctionScenario.node[28].veinsmobility speed ETV
+vector 145 smartjunctionScenario.node[29].veinsmobility speed ETV
+47	61991 1114 305 1836 23 72 50 0.973 8.9909043966467 136.4938247499 635.28364914234
+46	63105 1286 305 1836 23 72 50 -4.5 2.5558465809328 11.994607277518 124.02038867695
+44	64391 1282 304 1836 22 72 51 0 14.609835967283 387.36789179108 4758.6379593978
+41	65673 848 303 1836 21 72 52 226.6 226.6 11783.2 2670073.12
+40	66521 1351 303 1836 21 72 52 30.1 417.26789179108 10797.635099613 2728482.5155173
+vector 146 smartjunctionScenario.node[28].veinsmobility acceleration ETV
+vector 147 smartjunctionScenario.node[28].veinsmobility co2emission ETV
+vector 148 smartjunctionScenario.node[29].veinsmobility acceleration ETV
+vector 149 smartjunctionScenario.node[29].veinsmobility co2emission ETV
+57	68162 1067 310 1838 28 74 47 0.973 10.312085276551 138.74385090111 715.31869182231
+56	69229 1226 310 1838 28 74 47 -4.4351640108782 2.5552153061144 13.171820435001 113.91823793606
+54	70455 1204 309 1838 27 74 48 0 15.592217328612 392.24254750896 4960.4036817578
+51	71659 802 308 1838 26 74 49 226.6 226.6 11103.4 2516030.44
+50	72461 1272 308 1838 26 74 49 30.1 422.14254750896 10144.263954592 2582164.9414556
+vector 150 smartjunctionScenario.node[30].veinsmobility posx ETV
+vector 151 smartjunctionScenario.node[30].veinsmobility posy ETV
+vector 152 smartjunctionScenario.node[31].veinsmobility posx ETV
+vector 153 smartjunctionScenario.node[31].veinsmobility posy ETV
+vector 154 smartjunctionScenario.node[30].veinsmobility speed ETV
+vector 155 smartjunctionScenario.node[31].veinsmobility speed ETV
+vector 156 smartjunctionScenario.node[30].veinsmobility acceleration ETV
+vector 157 smartjunctionScenario.node[30].veinsmobility co2emission ETV
+vector 158 smartjunctionScenario.node[31].veinsmobility acceleration ETV
+vector 159 smartjunctionScenario.node[31].veinsmobility co2emission ETV
+67	74415 1118 315 2771 33 78 46 0.973 8.4311522327699 116.75564579598 447.21240235941
+66	75533 1274 315 2771 33 78 46 -4.4445000561189 2.5565521409502 11.144562832057 92.331371634117
+64	76807 1252 314 2771 32 78 47 0.00045330429131783 12.905501806783 394.71111670798 4355.6600332341
+61	78059 790 313 2771 31 78 48 226.6 226.6 10876.8 2464682.88
+60	78849 1254 313 2771 31 78 48 30.1 424.61111670798 10046.075125106 2645547.4840393
+77	80103 1003 873 2772 38 79 42 0.973 7.8864449394661 122.95481894189 511.05784435838
+76	81106 1130 873 2772 38 79 42 -4.5 2.4025031345198 11.950080791042 102.68505891296
+74	82236 1137 872 2772 37 79 43 0.15224401420914 14.37936265201 383.39759612492 4450.1183001464
+71	83373 727 318 2772 36 79 44 226.6 226.6 9970.4 2259292.64
+70	84100 1153 318 2772 36 79 44 30.1 413.29759612492 8862.7139315105 2274054.6715781
+vector 160 smartjunctionScenario.node[32].veinsmobility posx ETV
+vector 161 smartjunctionScenario.node[32].veinsmobility posy ETV
+vector 162 smartjunctionScenario.node[33].veinsmobility posx ETV
+vector 163 smartjunctionScenario.node[33].veinsmobility posy ETV
+87	85513 895 878 2774 43 81 39 0.973 9.1348976593838 127.42824898903 625.44314047652
+86	86408 1071 878 2774 43 81 39 -3.9029082228616 2.4913914639037 11.338839833335 107.14132146226
+84	87479 1064 877 2774 42 81 40 1.2397570654896 14.568178521156 381.69828919629 4502.1167489071
+81	88543 681 876 2774 41 81 41 226.6 226.6 9290.6 2105249.96
+80	89224 1077 876 2774 41 81 41 30.1 411.59828919629 8256.265364216 2121856.0365384
+vector 164 smartjunctionScenario.node[32].veinsmobility speed ETV
+vector 165 smartjunctionScenario.node[33].veinsmobility speed ETV
+vector 166 smartjunctionScenario.node[32].veinsmobility acceleration ETV
+vector 167 smartjunctionScenario.node[32].veinsmobility co2emission ETV
+vector 168 smartjunctionScenario.node[33].veinsmobility acceleration ETV
+vector 169 smartjunctionScenario.node[33].veinsmobility co2emission ETV
+97	90723 822 883 2776 48 83 36 0.973 9.0529454581619 131.5935373969 724.52999432398
+96	91545 987 883 2776 48 83 36 -4.265849055811 2.5309948943323 12.859789240321 101.22911354183
+94	92532 984 882 2776 47 83 37 1.733958205767 15.311239958003 386.1369310523 4727.2805824896
+91	93516 635 881 2776 46 83 38 226.6 226.6 8610.8 1951207.28
+90	94151 999 881 2776 46 83 38 30.1 416.0369310523 7733.3892025241 2041865.007739
+107	95150 828 888 2778 53 85 33 0.973 10.705745513408 125.50298697879 719.64506756816
+106	95978 946 888 2778 53 85 33 -3.0784860711127 2.4420438784407 14.841352455321 79.901904789225
+104	96924 945 887 2778 52 85 34 1.4824219500879 16.343080948063 380.66904460602 4937.7851846977
+101	97869 624 886 2778 51 85 35 226.6 226.6 7931 1797164.6
+100	98493 956 886 2778 51 85 35 30.1 410.56904460602 6927.1064340993 1804381.0337141
+vector 170 smartjunctionScenario.node[34].veinsmobility posx ETV
+vector 171 smartjunctionScenario.node[34].veinsmobility posy ETV
+vector 172 smartjunctionScenario.node[35].veinsmobility posx ETV
+vector 173 smartjunctionScenario.node[35].veinsmobility posy ETV
+vector 174 smartjunctionScenario.node[34].veinsmobility speed ETV
+vector 175 smartjunctionScenario.node[35].veinsmobility speed ETV
+vector 176 smartjunctionScenario.node[34].veinsmobility acceleration ETV
+vector 177 smartjunctionScenario.node[34].veinsmobility co2emission ETV
+vector 178 smartjunctionScenario.node[35].veinsmobility acceleration ETV
+vector 179 smartjunctionScenario.node[35].veinsmobility co2emission ETV
+117	100131 840 1822 2783 58 90 33 0.973 9.5963033881165 109.18266931938 545.71201163088
+116	100971 957 1822 2783 58 90 33 -3.7814070204056 2.5711045543663 11.794695900304 68.123021541118
+114	101928 949 1821 2783 57 90 34 1.8289693862433 13.869567773321 388.14224720112 4780.7687674058
+111	102877 629 891 2783 56 90 35 226.6 226.6 7931 1797164.6
+110	103506 964 891 2783 56 90 35 30.1 418.04224720112 7314.2617208164 2022379.0952901
+vector 180 smartjunctionScenario.node[36].veinsmobility posx ETV
+vector 181 smartjunctionScenario.node[36].veinsmobility posy ETV
+vector 182 smartjunctionScenario.node[37].veinsmobility posx ETV
+vector 183 smartjunctionScenario.node[37].veinsmobility posy ETV
+vector 184 smartjunctionScenario.node[36].veinsmobility speed ETV
+vector 185 smartjunctionScenario.node[37].veinsmobility speed ETV
+vector 186 smartjunctionScenario.node[36].veinsmobility acceleration ETV
+vector 187 smartjunctionScenario.node[36].veinsmobility co2emission ETV
+vector 188 smartjunctionScenario.node[37].veinsmobility acceleration ETV
+vector 189 smartjunctionScenario.node[37].veinsmobility co2emission ETV
+vector 190 smartjunctionScenario.node[38].veinsmobility posx ETV
+vector 191 smartjunctionScenario.node[38].veinsmobility posy ETV
+vector 192 smartjunctionScenario.node[39].veinsmobility posx ETV
+vector 193 smartjunctionScenario.node[39].veinsmobility posy ETV
+vector 194 smartjunctionScenario.node[38].veinsmobility speed ETV
+vector 195 smartjunctionScenario.node[39].veinsmobility speed ETV
+vector 196 smartjunctionScenario.node[38].veinsmobility acceleration ETV
+vector 197 smartjunctionScenario.node[38].veinsmobility co2emission ETV
+vector 198 smartjunctionScenario.node[39].veinsmobility acceleration ETV
+vector 199 smartjunctionScenario.node[39].veinsmobility co2emission ETV
+89	105834 1394 878 4336 43 106 64 0.973 6.5166805560945 124.56874054404 351.62739644072
+88	107228 1518 878 4336 43 106 64 -4.5 2.2205401309067 7.3855340601084 81.62008079085
+85	108746 1493 877 4336 42 106 65 0 10.021753458832 392.85725927468 3514.347445956
+83	110239 1754 876 4336 41 106 66 27.242740725323 419.9 16540.077758391 4839204.0447087
+82	111993 1113 876 4336 41 106 66 226.6 226.6 14955.6 3388938.96
+99	113106 1362 883 4338 48 108 61 0.973 6.3727672944903 142.04061082114 490.14558073684
+98	114468 1549 883 4338 48 108 61 -3.8431937506539 2.5376879582182 9.5178599123265 99.111278470163
+95	116017 1514 882 4338 47 108 62 0 12.855405765265 394.30821071242 3736.4015829301
+93	117531 1687 881 4338 46 108 63 25.791789287585 419.9 15767.552697955 4641201.1908417
+92	119218 1069 881 4338 46 108 63 226.6 226.6 14275.8 3234896.28
+109	120287 1356 888 4339 53 109 57 0.973 8.1981766130889 143.96015022354 575.63378845749
+108	121643 1518 888 4339 53 109 57 -3.9448230010755 2.4442392420905 8.408396373455 124.54599470572
+105	123161 1496 887 4339 52 109 58 0 12.12154975682 384.8450297223 3666.0418301905
+103	124657 1642 886 4339 51 109 59 35.254970277702 419.9 14923.436001932 4414288.8302428
+102	126299 1066 886 4339 51 109 59 226.6 226.6 13369.4 3029506.04
+119	127365 1349 1822 4342 58 112 55 0.973 5.5109574467347 120.46501191049 358.85687760945
+118	128714 1562 1822 4342 58 112 55 -4.5 2.1739359386265 8.1504474780152 77.063257621523
+115	130276 1531 1821 4342 57 112 56 0 10.302503144355 393.82936239301 3572.3420375436
+113	131807 1595 891 4342 56 112 57 26.270637606989 419.9 14275.742700708 4284619.8087623
+112	133402 1038 891 4342 56 112 57 226.6 226.6 12916.2 2926810.92
+129	134440 1279 1827 4343 63 113 51 0.973 7.5534741074932 139.29179825765 589.44337571721
+128	135719 1483 1827 4343 63 113 51 -4.5 2.4949901976157 8.6132168110479 122.79904808002
+125	137202 1465 1826 4343 62 113 52 0 14.595267016935 384.49738374736 3693.974659058
+123	138667 1483 1825 4343 61 113 53 35.602616252638 419.9 13318.346389397 3996284.4077222
+122	140150 968 1825 4343 61 113 53 226.6 226.6 12009.8 2721420.68
+139	141118 1208 1832 4345 68 115 48 0.973 10.254142481191 132.62390519001 581.39274559521
+138	142326 1389 1832 4345 68 115 48 -4.5 2.5538018681575 9.5529124630809 117.86275675471
+135	143715 1392 1831 4345 67 115 49 0.027810563674891 13.473053393769 385.9446307323 3656.6105259462
+133	145107 1399 1830 4345 66 115 50 34.155369267701 419.9 12408.988688904 3727230.3207751
+132	146506 916 1830 4345 66 115 50 226.6 226.6 11330 2567378
+149	147422 1431 1837 5652 73 133 61 0.973 9.3693316633002 168.74981558129 829.385191511
+148	148853 1484 1837 5652 73 133 61 -4.5 2.561271200492 12.794306775796 182.49484079683
+145	150337 1519 1836 5652 72 133 62 0 14.504561127125 387.33979999588 4327.0606080219
+143	151856 1783 1835 5652 71 133 63 32.760200004121 419.9 15682.372642228 4441456.4571148
+142	153639 1168 1835 5652 71 133 63 226.6 226.6 14275.8 3234896.28
+127	154807 1845 1827 6439 63 145 83 0.973 8.1629965208917 164.83089372221 566.42632694834
+126	156652 1901 1827 6439 63 145 83 -4.5 2.582686538389 10.185874124885 143.4521395127
+124	158553 1867 1826 6439 62 145 84 0 13.036797109445 384.93874309195 4244.7178205405
+121	160420 1576 1825 6439 61 145 85 226.6 226.6 19261 4364542.6
+120	161996 2411 1825 6439 61 145 85 30.1 414.83874309194 18051.939188998 4334044.7285344
+137	164407 1933 1832 6441 68 147 80 0.973 8.9962924161176 164.17718539069 600.46401331708
+136	166340 2168 1832 6441 68 147 80 -4.1849732037857 2.5744041044964 11.358335934686 122.62869238733
+134	168508 2104 1831 6441 67 147 81 0 13.361253716904 389.20335508858 4313.3033583138
+131	170612 1524 1830 6441 66 147 82 226.6 226.6 18581.2 4210499.92
+130	172136 2327 1830 6441 66 147 82 30.1 419.10335508858 17037.608498922 4066188.1577524
+147	174463 1917 1837 6443 73 149 77 0.973 9.7450570876199 166.04058484564 625.48942289767
+146	176380 2178 1837 6443 73 149 77 -4.1316325366454 2.4211570440559 12.14332590985 132.75216436935
+144	178558 2109 1836 6443 72 149 78 0 14.111773539142 392.93852057992 4505.0992759272
+141	180667 1472 1835 6443 71 149 79 226.6 226.6 17901.4 4056457.24
+140	182139 2237 1835 6443 71 149 79 30.1 422.83852057992 16222.58876648 3858366.5529033
+157	184376 1796 2771 6444 78 150 73 0.973 8.8420732460276 169.42012892204 730.95406278489
+156	186172 2120 2771 6444 78 150 73 -4.2891430132173 2.5311630139127 10.732230018814 147.69973790666
+154	188292 2071 2770 6444 77 150 74 0 15.972719099565 382.55887056698 4568.9582540096
+151	190363 1401 1840 6444 76 150 75 226.6 226.6 16995 3851067
+150	191764 2134 1840 6444 76 150 75 30.1 412.45887056698 14953.140773087 3447010.7898176
+159	193898 1855 2771 6450 78 156 79 0.973 8.8370601173128 192.17253706246 834.72434360626
+158	195753 1899 2771 6450 78 156 79 -4.5 2.5166617134353 14.864526983811 188.54358380786
+155	197652 1876 2770 6450 77 156 80 0 16.481353293098 389.85416701323 4466.005932743
+153	199528 2293 1840 6450 76 156 81 30.245832986767 419.9 20006.777345374 5443608.9521357
+152	201821 1515 1840 6450 76 156 81 226.6 226.6 18354.6 4159152.36
+167	203336 1863 2776 6576 83 157 75 0.973 6.4870438719846 149.1472377184 466.29288031578
+166	205199 2165 2776 6576 83 157 75 -4.5 2.5262554138899 9.1397950407729 104.55238485613
+164	207364 2120 2775 6576 82 157 76 0 11.642307397435 394.05038929683 3784.9278417829
+161	209484 1444 2774 6576 81 157 77 226.6 226.6 17448.2 3953762.12
+160	210928 2195 2774 6576 81 157 77 30.1 423.95038929683 15678.802310343 3779322.8357136
+177	213123 1841 2781 6579 88 160 73 0.973 7.697607119768 161.76082630069 597.0525382101
+176	214964 2134 2781 6579 88 160 73 -4.5 2.5513427064754 11.311829410816 154.57525747244
+174	217098 2102 2780 6579 87 160 74 0 14.009266684899 386.20299102714 4143.0440526198
+171	219200 1411 2779 6579 86 160 75 226.6 226.6 16995 3851067
+170	220611 2143 2779 6579 86 160 75 30.1 416.10299102714 14748.197741436 3398693.6860773
+169	222754 1914 2776 6584 83 165 83 0.973 8.3269651472386 182.37753493735 710.71291601186
+168	224668 2095 2776 6584 83 165 83 -4.5 2.5090397593332 12.061170711901 166.98021760025
+165	226763 2062 2775 6584 82 165 84 0 13.637637051891 393.50186769232 4224.0239288366
+163	228825 2431 2774 6584 81 165 85 26.598132307681 419.9 20954.74033211 5708627.0705306
+162	231256 1596 2774 6584 81 165 85 226.6 226.6 19261 4364542.6
+179	232852 1872 2781 6585 88 166 79 0.973 9.4949018296501 187.21863057502 831.31690557119
+178	234724 1973 2781 6585 88 166 79 -4.5 2.5386021288112 11.008233791787 185.38899741408
+175	236697 1970 2780 6585 87 166 80 0 15.515242990398 383.79819989571 4231.9198980734
+173	238667 2323 2779 6585 86 166 81 36.301800104286 419.9 20844.407940384 5892318.2485247
+172	240990 1525 2779 6585 86 166 81 226.6 226.6 18354.6 4159152.36
+189	242515 1841 2786 6589 93 170 78 0.973 7.5403130966012 159.2144876571 561.34828406994
+188	244356 2017 2786 6589 93 170 78 -3.8069602547785 2.5173131933436 8.692545442195 131.49827498484
+185	246373 1966 2785 6589 92 170 79 0 12.23385245244 390.12811221339 3899.3083644092
+183	248339 2283 2784 6589 91 170 80 29.97188778661 419.9 21517.56202266 6421866.4858432
+182	250622 1511 2784 6589 91 170 80 226.6 226.6 18128 4107804.8
+187	252133 2015 2786 6592 93 173 81 0.973 10.460119217345 175.93379647463 707.41393751499
+186	254148 2352 2786 6592 93 173 81 -3.7474995351397 2.5883056724211 11.616418101427 144.61477415081
+184	256500 2282 2785 6592 92 173 82 0 14.493229299386 390.44432886736 4231.3097960888
+181	258782 1568 2784 6592 91 173 83 226.6 226.6 18807.8 4261847.48
+180	260350 2380 2784 6592 91 173 83 30.1 420.34432886736 16410.80471002 3758547.5284373
+199	262730 1809 4328 6592 98 173 76 0.973 7.2054708760399 156.82732159657 528.35098750638
+198	264539 1978 4328 6592 98 173 76 -4.2983060629755 2.5358590961201 9.4133878717881 144.35147021661
+195	266517 1932 4327 6592 97 173 77 0 11.676154248345 393.8973934885 3812.5617418273
+193	268449 2220 2789 6592 96 173 78 26.202606511501 419.9 20988.052984589 6343797.2675092
+192	270669 1478 2789 6592 96 173 78 226.6 226.6 17674.8 4005109.68
+197	272147 1972 4328 6595 98 176 79 0.973 8.1031737485992 159.52081477689 537.6553927184
+196	274119 2313 4328 6595 98 176 79 -4.3508009103825 2.4903291091323 11.033495049858 114.16746190631
+194	276432 2241 4327 6595 97 176 80 0 13.099627781733 390.48434028849 4065.4908662402
+191	278673 1535 2789 6595 96 176 81 226.6 226.6 18354.6 4159152.36
+190	280208 2323 2789 6595 96 176 81 30.1 420.38434028849 15880.349191939 3663623.0197789
+
